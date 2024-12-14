@@ -1,0 +1,46 @@
+﻿@model WAW.ViewModel.EditProfileViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Profil Düzenle";
+    Layout = "_Layout";
+}
+
+<div class="container my-5">
+    <h1 class="text-center mb-4">Profil Düzenle</h1>
+
+    @if (ViewData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">@ViewData["SuccessMessage"]</div>
+    }
+    @if (ViewData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">@ViewData["ErrorMessage"]</div>
+    }
+
+    <form asp-action="EditAccount" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="Username" class="form-label">Kullanıcı Adı</label>
+            <input asp-for="Username" class="form-control" readonly />
+        </div>
+        <div class="mb-3">
+            <label for="FirstName" class="form-label">Ad</label>
+            <input asp-for="FirstName" class="form-control" />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="LastName" class="form-label">Soyad</label>
+            <input asp-for="LastName" class="form-control" />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="Email" class="form-label">E-posta</label>
+            <input asp-for="Email" class="form-control" readonly />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="d-flex justify-content-between mt-4">
+            <button type="submit" class="btn btn-primary">Güncelle</button>
+            <a href="@Url.Action("Profile", "Account")" class="btn btn-secondary">İptal</a>
+        </div>
+    </form>
+</div>

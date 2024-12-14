@@ -1,0 +1,53 @@
+@model List<WAW.Models.Conversation>
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Sohbetler";
+}
+
+<div class="container my-5">
+    <h1 class="text-center mb-4 text-primary">Sohbetler</h1>
+
+    @if (Model == null || Model.Count == 0)
+    {
+        <div class="alert alert-warning text-center">
+            Henüz bir sohbetiniz bulunmamaktadır.
+        </div>
+    }
+    else
+    {
+        <ul class="list-group">
+            @foreach (var conversation in Model)
+            {
+                <li class="list-group-item d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        
+                        @if (HttpContextAccessor.HttpContext.Session.GetString("AccountType") == "Müşteri")
+                        {
+                            <img src="@(conversation.Advertiser?.User?.AvatarURL ?? "/images/default-avatar.png")" alt="Avatar"
+                                 class="rounded-circle me-3" style="width: 50px; height: 50px;" />
+                            <div>
+                                <strong>Reklamcı:</strong>
+                                <span>@conversation.Advertiser?.User?.FirstName @conversation.Advertiser?.User?.LastName</span>
+                            </div>
+                        }
+                        else if (HttpContextAccessor.HttpContext.Session.GetString("AccountType") == "Reklamcı")
+                        {
+                            <img src="@(conversation.Customer?.User?.AvatarURL ?? "/images/default-avatar.png")" alt="Avatar"
+                                 class="rounded-circle me-3" style="width: 50px; height: 50px;" />
+                            <div>
+                                <strong>Müşteri:</strong>
+                                <span>@conversation.Customer?.User?.FirstName @conversation.Customer?.User?.LastName</span>
+                            </div>
+                        }
+                    </div>
+                   
+                    <a href="@Url.Action("Details", "Chat", new { id = conversation.ConversationId })" class="btn btn-primary">
+                        Sohbeti Gör
+                    </a>
+                </li>
+            }
+        </ul>
+    }
+</div>

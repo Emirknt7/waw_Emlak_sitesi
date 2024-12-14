@@ -1,0 +1,99 @@
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - ASP.NET Core Uygulaması</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header class="bg-light py-3 shadow-sm">
+        <div class="container d-flex align-items-center justify-content-between">
+          
+            <a href="@Url.Action("Index", "Home")" class="d-flex align-items-center" style="text-decoration:none">
+                <img src="~/images/logo.png" alt="Logo" class="me-3" style="width: 100px; height: 100px;" />
+                <span class="fs-5 fw-bold text-primary">WAW Platformu</span>
+            </a>
+
+            
+            <nav class="d-flex align-items-center">
+                <ul class="nav">
+                    
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Home")">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("RealEstates", "Home")">Emlak İlanları</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Contact", "Home")">Bize Ulaşın</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("AboutUs", "Home")">Hakkımızda</a></li>
+
+                    @if (HttpContextAccessor.HttpContext.Session.GetInt32("UserId") != null)
+                    {
+                        var accountType = HttpContextAccessor.HttpContext.Session.GetString("AccountType");
+                        var userName = HttpContextAccessor.HttpContext.Session.GetString("FullName");
+
+                        
+@* 
+                        
+                            
+                         *@
+                       
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="me-2"><strong>@userName</strong> (<em>@accountType</em>)</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item" href="@Url.Action("Profile", "Account")">Hesabım</a></li>
+
+                                @if (accountType == "Müşteri")
+                                {
+                                    <li><a class="dropdown-item" href="@Url.Action("Index", "Chat")">Sohbetler</a></li>
+                                    <li><a class="dropdown-item" href="@Url.Action("Favorites", "Customer")">Favoriler</a></li>
+                                }
+                                else if (accountType == "Reklamcı")
+                                {
+                                    <li><a class="dropdown-item" href="@Url.Action("Index", "Chat")">Sohbetler</a></li>
+                                    <li><a class="dropdown-item" href="@Url.Action("MyAds", "Advertiser")">İlanlarım</a></li>
+                                }
+                                else if (accountType == "Yönetici")
+                                {
+                                    <li><a class="dropdown-item" href="@Url.Action("NewAds", "Admin")">Tüm İlanlar</a></li>
+                                }
+
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Logout", "Account")">Çıkış Yap</a></li>
+                            </ul>
+                        </li>
+                    }
+                    else
+                    {
+                        
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Register", "Account")">Bize Katıl</a></li>
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Login", "Account")">Giriş Yap</a></li>
+                    }
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main role="main" class="container mt-4">
+        @RenderBody()  
+    </main>
+    <footer class="bg-light text-center py-3 mt-4">
+        <p>&copy; 2024 - Kalumian | <a href="#">Gizlilik Politikası</a></p>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation-unobtrusive@3.2.12/jquery.validate.unobtrusive.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="~/js/site.js"></script>
+</html>

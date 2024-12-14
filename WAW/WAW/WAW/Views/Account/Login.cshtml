@@ -1,0 +1,70 @@
+﻿@model WAW.ViewModel.LoginViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+}
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <!-- Logo -->
+            <div class="text-center mb-4">
+                <img src="~/images/logo.png" alt="WAW Logo" class="img-fluid" style="max-width: 150px;">
+            </div>
+
+            <!-- Page Title -->
+            <h2 class="text-center">Giriş Yap</h2>
+
+            <!-- Success Message -->
+            @if (ViewData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success">
+                    @ViewData["SuccessMessage"]
+                </div>
+            }
+
+            <!-- Error Message -->
+            @if (ViewData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger">
+                    @ViewData["ErrorMessage"]
+                </div>
+            }
+
+            <!-- Validation Errors -->
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div class="alert alert-danger">
+                    Lütfen aşağıdaki hataları düzeltin:
+                    <ul>
+                        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                        {
+                            <li>@error.ErrorMessage</li>
+                        }
+                    </ul>
+                </div>
+            }
+
+            <!-- Login Form -->
+            <form method="post" asp-action="Login" asp-controller="Account" class="mt-4">
+                <div class="mb-3">
+                    <label for="Username" class="form-label">Kullanıcı Adı</label>
+                    <input asp-for="Username" class="form-control" id="Username" />
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="Password" class="form-label">Şifre</label>
+                    <input asp-for="Password" type="password" class="form-control" id="Password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Giriş Yap</button>
+            </form>
+
+            <!-- Links -->
+            <div class="text-center mt-3">
+                <a href="@Url.Action("Register", "Account")" class="text-decoration-none">Yeni Hesap Oluştur</a> |
+                <a href="@Url.Action("Index", "Home")" class="text-decoration-none">Ana Sayfaya Dön</a>
+            </div>
+        </div>
+    </div>
+</div>

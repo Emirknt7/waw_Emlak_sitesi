@@ -1,0 +1,68 @@
+﻿@model WAW.Models.User
+
+@{
+    ViewData["Title"] = "Hesabım";
+    Layout = "_Layout";
+    var accountType = ViewData["AccountType"] as string;
+}
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <!-- Profil Bölümü -->
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="@Model.AvatarURL" alt="Profil Resmi" class="rounded-circle mb-3" style="width: 150px; height: 150px;" />
+                    <h4 class="card-title">@Model.Username</h4>
+                    <p class="card-text text-muted">@accountType</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Ad:</strong> @Model.FirstName</li>
+                    <li class="list-group-item"><strong>Soyad:</strong> @Model.LastName</li>
+                    <li class="list-group-item"><strong>E-posta:</strong> @Model.Email</li>
+                    <li class="list-group-item"><strong>Son Giriş Tarihi:</strong> @Model.LastLoginDate.ToString("dd/MM/yyyy HH:mm")</li>
+                </ul>
+                <div class="card-footer text-center">
+                    <a href="@Url.Action("EditAccount", "Account")" class="btn btn-primary mx-2">Bilgileri Güncelle</a>
+                    <a href="@Url.Action("Logout", "Account")" class="btn btn-danger mx-2">Çıkış Yap</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Özel Sayfalar -->
+    <div class="row mt-5">
+        <div class="col-md-6 offset-md-3">
+            <h3 class="text-center">Özel Sayfalar</h3>
+            <ul class="list-group">
+                @if (accountType == "Müşteri")
+                {
+                    <li class="list-group-item">
+                        <a href="@Url.Action("Index", "Chat")" class="text-decoration-none">Sohbetler</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="@Url.Action("Favorites", "Customer")" class="text-decoration-none">Favoriler</a>
+                    </li>
+                }
+                @if (accountType == "Reklamcı")
+                {
+                    <li class="list-group-item">
+                        <a href="@Url.Action("Index", "Chat")" class="text-decoration-none">Sohbetler</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="@Url.Action("MyAds", "Advertiser")" class="text-decoration-none">İlanlarım</a>
+                    </li>
+                }
+                @if (accountType == "Yönetici")
+                {
+                    <li class="list-group-item">
+                        <a href="@Url.Action("NewAds", "Admin")" class="text-decoration-none">Yeni İlanlar</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="@Url.Action("Accounts", "Admin")" class="text-decoration-none">Hesap Listesi</a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>

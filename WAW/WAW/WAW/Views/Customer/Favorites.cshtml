@@ -1,0 +1,84 @@
+﻿@model List<WAW.Models.Ad>
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Favoriler";
+    Layout = "_Layout";
+}
+
+<div class="container my-5">
+    <h1 class="text-center mb-4">Favoriler</h1>
+    <p class="text-center text-muted">Beğendiğiniz ilanları burada görebilirsiniz:</p>
+
+    @if (Model != null && Model.Count > 0)
+    {
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var ad in Model)
+            {
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <!-- Görsel -->
+                        <img src="@ad.ImageURL" class="card-img-top" alt="@ad.Title">
+                        <div class="card-body">
+                            <!-- Advertiser Info -->
+                            <div class="d-flex align-items-center mb-3">
+                                @if (ad.Advertiser?.User != null)
+                                {
+                                    <img src="@(ad.Advertiser.User.AvatarURL != null && ad.Advertiser.User.AvatarURL.StartsWith("http")
+                                        ? ad.Advertiser.User.AvatarURL
+                                        : Url.Content(ad.Advertiser.User.AvatarURL ?? "/images/default-avatar.png"))"
+                                         class="rounded-circle me-2" alt="Profil Resmi" style="width: 50px; height: 50px;">
+                                    <div>
+                                        <p class="mb-0 fw-bold">@ad.Advertiser.User.FirstName @ad.Advertiser.User.LastName</p>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <p class="text-danger mb-0">Reklam veren bilgisi mevcut değil.</p>
+                                }
+                            </div>
+
+                            <!-- Ad Details -->
+                            <h5 class="card-title">@ad.Title</h5>
+                            <p class="card-text">@ad.Description</p>
+                            <p><strong>Adres:</strong> @ad.Address</p>
+                            <p><strong>Fiyat:</strong> @ad.Price ₺</p>
+                            <a href="@ad.LocationURL" target="_blank" class="btn btn-link p-0">Konum</a>
+                        </div>
+                        <div class="card-footer">
+                            <!-- Satıcıyla iletişim -->
+                            <a href="@Url.Action("ChatWithSeller", "Chat", new { advertiserId = @ad.AdvertiserId })" class="btn btn-success w-100 mb-2">Satıcıyla İletişime Geç</a>
+
+                            <!-- Beğeni Butonu -->
+                            @if (HttpContextAccessor.HttpContext.Session.GetInt32("UserId") != null && HttpContextAccessor.HttpContext.Session.GetString("AccountType") == "Müşteri")
+                            {
+                                <form asp-action="ToggleLike" asp-controller="Home" method="post">
+                                    <input type="hidden" name="adId" value="@ad.AdId" />
+                                    <input type="hidden" name="returnUrl" value="@($"{HttpContextAccessor.HttpContext.Request.Path}{HttpContextAccessor.HttpContext.Request.QueryString}")" />
+                                    @if (ad.Favorites != null && ad.Favorites.Any(f => f.Customer != null && f.Customer.UserId == HttpContextAccessor.HttpContext.Session.GetInt32("UserId")))
+                                    {
+                                        <button type="submit" class="btn btn-danger w-100">Beğeniyi Kaldır</button>
+                                    }
+                                    else
+                                    {
+                                        <button type="submit" class="btn btn-primary w-100">Beğen</button>
+                                    }
+                                </form>
+                            }
+                            else if (HttpContextAccessor.HttpContext.Session.GetInt32("UserId") == null)
+                            {
+                                <a href="@Url.Action("Login", "Account", new { returnUrl = HttpContextAccessor.HttpContext.Request.Path + HttpContextAccessor.HttpContext.Request.QueryString })" class="btn btn-warning w-100">Beğen</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info text-center mt-4">
+            Henüz hiçbir ilana beğeni eklemediniz.
+        </div>
+    }
+</div>

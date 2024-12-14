@@ -1,0 +1,52 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Hakkımızda";
+}
+
+<div class="container my-5">
+    <h1 class="text-center mb-4 display-4 text-primary">Hakkımızda</h1>
+    <p class="lead text-center text-muted">
+        WAW Uygulaması, emlak ilanlarını paylaşmak ve keşfetmek için en iyi platformdur. Misyonumuz, kullanıcılarımıza güvenilir ve kullanımı kolay bir deneyim sunmaktır.
+    </p>
+
+    <div class="row mt-5 align-items-center">
+        <!-- Vision Section -->
+        <div class="col-lg-6">
+            <h2 class="text-success mb-3"><i class="bi bi-eye me-2"></i>Vizyonumuz</h2>
+            <p class="fs-5">
+                Emlak sektöründe dijital dönüşümü hızlandırmak ve kullanıcılarımıza en iyi hizmeti sağlamak.
+            </p>
+        </div>
+        <!-- Values Section -->
+        <div class="col-lg-6">
+            <h2 class="text-success mb-3"><i class="bi bi-heart-fill me-2"></i>Değerlerimiz</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-shield-check text-success fs-4 me-3"></i>
+                    <span>Güvenilirlik</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-emoji-smile text-success fs-4 me-3"></i>
+                    <span>Müşteri memnuniyeti</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-lightbulb text-success fs-4 me-3"></i>
+                    <span>Yenilikçilik</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Additional Section -->
+    <div class="row mt-5">
+        <div class="col text-center">
+            <h3 class="text-primary">Neden Bizi Seçmelisiniz?</h3>
+            <p class="fs-5 text-muted">
+                Güvenilir hizmet, yenilikçi çözümler ve müşteri odaklı bir deneyim sunuyoruz. WAW Uygulaması ile emlak sektöründeki en iyi fırsatları keşfedin!
+            </p>
+            <a href="@Url.Action("Contact", "Home")" class="btn btn-primary btn-lg">
+                Bize Ulaşın <i class="bi bi-envelope ms-2"></i>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+﻿@model List<WAW.Models.Ad>
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Yeni İlanlar";
+}
+
+<h1>Yeni İlanlar</h1>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<table class="table table-striped" border="1">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Başlık</th>
+            <th>Reklamcı</th>
+            <th>Email</th>
+            <th>Durum</th>
+            <th>İlan Tarihi</th>
+            <th>Detaylar</th>
+            <th>Aksiyon</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ad in Model)
+        {
+            <tr>
+                <td>@ad.AdId</td>
+                <td>@ad.Title</td>
+                <td>@ad.Advertiser.User.FirstName @ad.Advertiser.User.LastName</td>
+                <td>@ad.Advertiser.User.Email</td>
+                <td>@(ad.Status ? "Aktif" : "Pasif")</td>
+                <td>@ad.DatePosted.ToString("g")</td>
+                <td>
+                    <a href="@Url.Action("AdDetails", "Admin", new { id = ad.AdId })" class="btn btn-info">Detaylar</a>
+                </td>
+                <td>
+                    <form method="post" asp-action="ToggleStatus" asp-controller="Admin">
+                        <input type="hidden" name="adId" value="@ad.AdId" />
+                        <button type="submit" class="btn btn-@(ad.Status ? "danger" : "success")">
+                            @(ad.Status ? "Pasifleştir" : "Aktifleştir")
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

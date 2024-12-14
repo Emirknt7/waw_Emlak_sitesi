@@ -1,0 +1,536 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\migrations\\20241207213959_add-all-tables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\migrations\\20241207213959_add-all-tables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\views\\account\\editaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\views\\account\\editaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\views\\home\\realestates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\views\\home\\realestates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\views\\chat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\views\\chat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\controllers\\advertisercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\controllers\\advertisercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\views\\chat\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\views\\chat\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\views\\advertiser\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\views\\advertiser\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\views\\advertiser\\myads.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\views\\advertiser\\myads.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\models\\ad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\models\\ad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\views\\advertiser\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\views\\advertiser\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\viewmodel\\editprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\viewmodel\\editprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\models\\advertiser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\models\\advertiser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\models\\conversations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\models\\conversations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\models\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\models\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\views\\admin\\addetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\views\\admin\\addetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|c:\\users\\emir\\desktop\\emr\\emr\\kodlama\\asp\\waw\\waw\\waw\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53847D45-CC16-403D-91F2-2085F07E23A5}|WAW\\WAW.csproj|solutionrelative:waw\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20241207213959_add-all-tables.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Migrations\\20241207213959_add-all-tables.cs",
+              "RelativeDocumentMoniker": "WAW\\Migrations\\20241207213959_add-all-tables.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Migrations\\20241207213959_add-all-tables.cs",
+              "RelativeToolTip": "WAW\\Migrations\\20241207213959_add-all-tables.cs",
+              "ViewState": "AQIAALYAAAAAAAAAAAAqwAcAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T21:40:00.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Program.cs",
+              "RelativeDocumentMoniker": "WAW\\Program.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Program.cs",
+              "RelativeToolTip": "WAW\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T21:39:07.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditAccount.cshtml",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Account\\EditAccount.cshtml",
+              "RelativeDocumentMoniker": "WAW\\Views\\Account\\EditAccount.cshtml",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Account\\EditAccount.cshtml",
+              "RelativeToolTip": "WAW\\Views\\Account\\EditAccount.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T17:43:13.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RealEstates.cshtml",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Home\\RealEstates.cshtml",
+              "RelativeDocumentMoniker": "WAW\\Views\\Home\\RealEstates.cshtml",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Home\\RealEstates.cshtml",
+              "RelativeToolTip": "WAW\\Views\\Home\\RealEstates.cshtml",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAADgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T21:08:42.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Chat\\Index.cshtml",
+              "RelativeDocumentMoniker": "WAW\\Views\\Chat\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Chat\\Index.cshtml",
+              "RelativeToolTip": "WAW\\Views\\Chat\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T17:50:13.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WAW\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WAW\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T17:45:24.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdvertiserController.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Controllers\\AdvertiserController.cs",
+              "RelativeDocumentMoniker": "WAW\\Controllers\\AdvertiserController.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Controllers\\AdvertiserController.cs",
+              "RelativeToolTip": "WAW\\Controllers\\AdvertiserController.cs",
+              "ViewState": "AQIAALYAAAAAAAAAAAAuwL8AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T20:28:03.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Chat\\Details.cshtml",
+              "RelativeDocumentMoniker": "WAW\\Views\\Chat\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Chat\\Details.cshtml",
+              "RelativeToolTip": "WAW\\Views\\Chat\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T17:51:40.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\ViewModel\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "WAW\\ViewModel\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\ViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "WAW\\ViewModel\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T19:56:48.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\appsettings.json",
+              "RelativeDocumentMoniker": "WAW\\appsettings.json",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\appsettings.json",
+              "RelativeToolTip": "WAW\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-07T21:03:59.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\ViewModel\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "WAW\\ViewModel\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\ViewModel\\RegisterViewModel.cs",
+              "RelativeToolTip": "WAW\\ViewModel\\RegisterViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T19:56:49.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "WAW\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "WAW\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T19:52:14.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WAW\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WAW\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAABCwHYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T19:52:21.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "WAW\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "WAW\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAA9wEUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T20:58:44.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Advertiser\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WAW\\Views\\Advertiser\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Advertiser\\Edit.cshtml",
+              "RelativeToolTip": "WAW\\Views\\Advertiser\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T21:05:05.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Advertiser\\Create.cshtml",
+              "RelativeDocumentMoniker": "WAW\\Views\\Advertiser\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Advertiser\\Create.cshtml",
+              "RelativeToolTip": "WAW\\Views\\Advertiser\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T21:06:57.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MyAds.cshtml",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Advertiser\\MyAds.cshtml",
+              "RelativeDocumentMoniker": "WAW\\Views\\Advertiser\\MyAds.cshtml",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Advertiser\\MyAds.cshtml",
+              "RelativeToolTip": "WAW\\Views\\Advertiser\\MyAds.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T21:06:58.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Ad.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Models\\Ad.cs",
+              "RelativeDocumentMoniker": "WAW\\Models\\Ad.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Models\\Ad.cs",
+              "RelativeToolTip": "WAW\\Models\\Ad.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T19:44:31.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EditProfileViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\ViewModel\\EditProfileViewModel.cs",
+              "RelativeDocumentMoniker": "WAW\\ViewModel\\EditProfileViewModel.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\ViewModel\\EditProfileViewModel.cs",
+              "RelativeToolTip": "WAW\\ViewModel\\EditProfileViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T19:56:44.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "WAW\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "WAW\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T20:28:04.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Advertiser.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Models\\Advertiser.cs",
+              "RelativeDocumentMoniker": "WAW\\Models\\Advertiser.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Models\\Advertiser.cs",
+              "RelativeToolTip": "WAW\\Models\\Advertiser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T19:45:06.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Conversations.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Models\\Conversations.cs",
+              "RelativeDocumentMoniker": "WAW\\Models\\Conversations.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Models\\Conversations.cs",
+              "RelativeToolTip": "WAW\\Models\\Conversations.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T19:47:20.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "WAW\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Models\\Customer.cs",
+              "RelativeToolTip": "WAW\\Models\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T19:47:20.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Favorite.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Models\\Favorite.cs",
+              "RelativeDocumentMoniker": "WAW\\Models\\Favorite.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Models\\Favorite.cs",
+              "RelativeToolTip": "WAW\\Models\\Favorite.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T19:47:18.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "WAW\\Models\\Message.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Models\\Message.cs",
+              "RelativeToolTip": "WAW\\Models\\Message.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T19:47:17.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Models\\User.cs",
+              "RelativeDocumentMoniker": "WAW\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Models\\User.cs",
+              "RelativeToolTip": "WAW\\Models\\User.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T19:44:59.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "WAW\\Models\\Admin.cs",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Models\\Admin.cs",
+              "RelativeToolTip": "WAW\\Models\\Admin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T19:44:35.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AdDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Admin\\AdDetails.cshtml",
+              "RelativeDocumentMoniker": "WAW\\Views\\Admin\\AdDetails.cshtml",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Admin\\AdDetails.cshtml",
+              "RelativeToolTip": "WAW\\Views\\Admin\\AdDetails.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABMAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T17:50:11.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AboutUs.cshtml",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Home\\AboutUs.cshtml",
+              "RelativeDocumentMoniker": "WAW\\Views\\Home\\AboutUs.cshtml",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Home\\AboutUs.cshtml",
+              "RelativeToolTip": "WAW\\Views\\Home\\AboutUs.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T17:48:58.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "WAW\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "WAW\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T17:48:57.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "WAW\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Emir\\Desktop\\Emr\\EMR\\kodlama\\asp\\WAW\\WAW\\WAW\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "WAW\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T17:43:33.252Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

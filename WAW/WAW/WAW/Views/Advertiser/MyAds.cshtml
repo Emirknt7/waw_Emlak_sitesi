@@ -1,0 +1,61 @@
+﻿@model List<WAW.Models.Ad>
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "İlanlarım";
+    Layout = "_Layout";
+}
+
+<h1>İlanlarım</h1>
+
+<!-- إحصائيات الإعلانات -->
+<div class="stats">
+    <p>Toplam İlanlar: @ViewBag.TotalAds</p>
+    <p>Aktif İlanlar: @ViewBag.ActiveAds</p>
+    <p>Pasif İlanlar: @ViewBag.InactiveAds</p>
+</div>
+
+<!-- أداة البحث -->
+<div class="search-bar">
+    <form method="get" asp-action="MyAds">
+        <input type="text" name="search" placeholder="İlanlarda Ara..." class="form-control" value="@HttpContextAccessor.HttpContext.Request.Query["search"]" />
+        <button type="submit" class="btn btn-primary">Ara</button>
+    </form>
+</div>
+
+<!-- جدول الإعلانات -->
+<table class="table table-striped" border="1">
+    <thead>
+        <tr>
+            <th>Resim</th>
+            <th>Başlık</th>
+            <th>Adres</th>
+            <th>Fiyat</th>
+            <th>Durum</th>
+            <th></th>
+            <th></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ad in Model)
+        {
+            <tr>
+                <td><img src="@ad.ImageURL" alt="@ad.Title" style="width: 100px; height: 100px;" /></td>
+                <td>@ad.Title</td>
+                <td>@ad.Address</td>
+                <td>@ad.Price ₺</td>
+                <td>@(ad.Status ? "Aktif" : "Pasif")</td>
+                <td>
+                    <a href="@Url.Action("Delete", "Advertiser", new { id = ad.AdId })" class="btn btn-danger btn-sm">Sil</a>
+                </td>
+                <td>
+                    <a href="@Url.Action("Edit", "Advertiser", new { id = ad.AdId })" class="btn btn-warning btn-sm">Düzenle</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="add-ad">
+    <a href="@Url.Action("Create", "Advertiser")" class="btn btn-success" style="margin-bottom: 20px;">Yeni İlan Ekle</a>
+</div>

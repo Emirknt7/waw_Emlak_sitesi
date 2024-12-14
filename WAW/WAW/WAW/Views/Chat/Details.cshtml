@@ -1,0 +1,63 @@
+@model WAW.Models.Conversation
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation-unobtrusive@3.2.12/jquery.validate.unobtrusive.min.js"></script>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Sohbet Detayları";
+}
+
+<div class="container my-5">
+    <h1 class="text-center mb-4 text-primary">Sohbet Detayları</h1>
+
+    
+    <div class="alert alert-info">
+        <strong>
+            @if (HttpContextAccessor.HttpContext.Session.GetString("AccountType") == "Müşteri")
+            {
+                <span>Satıcı: @Model.Advertiser?.User?.FirstName @Model.Advertiser?.User?.LastName</span>
+            }
+            else
+            {
+                <span>Müşteri: @Model.Customer?.User?.FirstName @Model.Customer?.User?.LastName</span>
+            }
+        </strong>
+    </div>
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            Mesajlar
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                @foreach (var message in Model.Messages.OrderBy(m => m.DateSent))
+                {
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>
+                                    @(message.SenderType == SenderType.Customer
+                                        ? $"{Model.Customer?.User?.FirstName} {Model.Customer?.User?.LastName}"
+                                        : $"{Model.Advertiser?.User?.FirstName} {Model.Advertiser?.User?.LastName}")
+                                    :
+                                </strong>
+                                @message.Content
+                            </div>
+                            <span class="text-muted">@message.DateSent.ToString("g")</span>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+
+   
+    <form method="post" asp-action="SendMessage" asp-controller="Chat" class="mt-4">
+        <input type="hidden" name="conversationId" value="@Model.ConversationId" />
+        <div class="mb-3">
+            <textarea name="content" class="form-control" rows="3" placeholder="Mesaj yazın..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Gönder</button>
+    </form>
+</div>

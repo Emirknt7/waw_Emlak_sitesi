@@ -1,0 +1,36 @@
+﻿@model WAW.Models.Ad
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "İlan Detayları";
+}
+
+<h1>İlan Detayları</h1>
+
+<div class="card">
+    <div class="card-header">
+        <h2>@Model.Title</h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Açıklama:</strong> @Model.Description</p>
+        <p><strong>Adres:</strong> @Model.Address</p>
+        <p><strong>Fiyat:</strong> @Model.Price ₺</p>
+        <p><strong>Durum:</strong> @(Model.Status ? "Aktif" : "Pasif")</p>
+        <p><strong>İlan Tarihi:</strong> @Model.DatePosted.ToString("g")</p>
+        <p><strong>Konum:</strong> <a href="@Model.LocationURL" target="_blank">Haritayı Gör</a></p>
+    </div>
+</div>
+
+<h2>Reklamcı Bilgileri</h2>
+<div class="card mt-3">
+    <div class="card-header">
+        <h3>@Model.Advertiser.User.FirstName @Model.Advertiser.User.LastName</h3>
+    </div>
+    <div class="card-body">
+        <p><strong>Email:</strong> @Model.Advertiser.User.Email</p>
+        <p><strong>Son Giriş:</strong> @Model.Advertiser.User.LastLoginDate.ToString("g")</p>
+    </div>
+</div>
+
+<a href="@Url.Action("NewAds", "Admin")" class="btn btn-secondary mt-3">Geri Dön</a>
